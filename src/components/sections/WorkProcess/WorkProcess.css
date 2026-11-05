@@ -1,0 +1,87 @@
+/* Work process (3 steps) */
+
+/* ============================================================== 
+     # Process 
+=================================================================== */
+ .process-item .icon i {
+     -webkit-border-radius: 50%;
+     -moz-border-radius: 50%;
+     border-radius: 50%;
+     -moz-box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+     -webkit-box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+     -o-box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+     box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+     color: var(--color-heading);
+     font-size: 30px;
+     height: 80px;
+     line-height: 75px;
+     text-align: center;
+     width: 80px;
+     border: 3px solid;
+}
+ .process-item .count {
+     background: var(--white) none repeat scroll 0 0;
+     float: left;
+     vertical-align: top;
+}
+ .process-item .info {
+     display: table;
+     padding-left: 30px;
+}
+ .process-item {
+     border-bottom: 1px solid #e7e7e7;
+     margin-bottom: 30px;
+     padding-bottom: 30px;
+     position: relative;
+     z-index: 1;
+}
+ .process-item:last-child {
+     border: medium none;
+     margin: 0;
+     padding: 0;
+}
+ .process-item .info h4 {
+     margin-bottom: 10px;
+     text-transform: capitalize;
+     font-weight: 700;
+}
+ .process-item .info p {
+     margin: 0;
+}
+ .process-item .count {
+     background: transparent;
+     color: var(--color-primary);
+     float: left;
+     font-family: var(--font-default);
+     font-size: 30px;
+     font-weight: 700;
+     vertical-align: top;
+}
+ .process-content img {
+     background: var(--white) none repeat scroll 0 0;
+     -moz-box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+     -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+     -o-box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+     box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+     padding: 15px;
+}
+ .process-items {
+     padding-left: 30px;
+}
+
+
+/* ---- Responsive ---- */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .process-items {
+           margin-top: 50px;
+           padding-left: 15px;
+      }
+}
+
+@media only screen and (max-width: 767px) {
+  .process-items {
+           margin-top: 30px;
+           padding-left: 15px;
+      }
+}
+

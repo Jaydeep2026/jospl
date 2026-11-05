@@ -1,0 +1,340 @@
+/* Base element styles, typography, buttons, helpers */
+
+/* Default CSS */
+ .container-half {
+     margin: 0 auto;
+     width: 60%;
+     padding: 0 15px;
+}
+ .bg-cover {
+     background-position: center center;
+     background-size: cover;
+}
+ .bg-fixed {
+     background-attachment: fixed;
+     background-position: center top;
+     background-size: cover;
+}
+ .bg-gray {
+     background-color: var(--bg-gray);
+}
+ .bg-light {
+     background-color: #f7f7f7;
+}
+ .bg-theme {
+     background-color: var(--color-primary);
+}
+ .text-light h1, 
+ .text-light h2, 
+ .text-light h3, 
+ .text-light h4, 
+ .text-light h5, 
+ .text-light h6, 
+ .text-light p, 
+ .text-light a {
+     color: var(--white);
+}
+
+
+.container-full {
+  padding: 0 15px;
+  margin: auto;
+  max-width: 1400px;
+}
+
+@media (min-width:576px) {
+  .container-full {
+    max-width: 540px;
+  }
+}
+
+@media (min-width:768px) {
+  .container-full {
+    max-width: 720px;
+  }
+}
+
+@media (min-width:992px) {
+  .container-full {
+    max-width: 960px;
+  }
+}
+
+@media (min-width:1200px) {
+  .container-full {
+    max-width: 1400px;
+    width: 90%;
+  }
+}
+
+.bg-gradient {
+    background: rgb(179,19,25);
+background: linear-gradient(97deg, rgba(179,19,25,1) 44%, rgba(226,42,49,1) 100%);
+}
+ .shadow {
+     position: relative;
+     z-index: 1;
+}
+ .shadow.dark::after {
+     background: #000000 none repeat scroll 0 0;
+     content: "";
+     height: 100%;
+     left: 0;
+     opacity: 0.5;
+     position: absolute;
+     top: 0;
+     width: 100%;
+     z-index: -1;
+}
+ .shadow.dark-hard::after {
+     background: #1c1c1c none repeat scroll 0 0;
+     content: "";
+     height: 100%;
+     left: 0;
+     opacity: 0.75;
+     position: absolute;
+     top: 0;
+     width: 100%;
+     z-index: -1;
+}
+ .shadow.light::after {
+     background: var(--white) none repeat scroll 0 0;
+     content: "";
+     height: 100%;
+     left: 0;
+     opacity: 0.3;
+     position: absolute;
+     top: 0;
+     width: 100%;
+     z-index: -1;
+}
+ .shadow.theme::after {
+     background: var(--color-primary) none repeat scroll 0 0;
+     content: "";
+     height: 100%;
+     left: 0;
+     opacity: 0.7;
+     position: absolute;
+     top: 0;
+     width: 100%;
+     z-index: -1;
+}
+ .default-padding {
+     padding-top: 60px;
+     padding-bottom: 60px;
+}
+ .default-padding.bottom-less {
+     padding-top: 60px;
+     padding-bottom: 30px;
+}
+
+.default-padding.no-bottom {
+    padding-top: 120px;
+    padding-bottom: 0;
+}
+
+.default-padding.no-top {
+    padding-top: 0;
+    padding-bottom: 90px;
+}
+
+
+
+ .padding-xl {
+     padding-top: 150px;
+     padding-bottom: 150px;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+ .btn {
+     display: inline-block;
+     font-family: var(--font-default);
+     font-size: 14px;
+     font-weight: 700;
+     line-height: 25px;
+     text-transform: uppercase;
+     -webkit-transition: all 0.35s ease-in-out;
+     -moz-transition: all 0.35s ease-in-out;
+     -ms-transition: all 0.35s ease-in-out;
+     -o-transition: all 0.35s ease-in-out;
+     transition: all 0.35s ease-in-out;
+}
+ .btn-md {
+     padding: 14px 40px;
+     -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+     border-radius: 5px;
+}
+ .btn-sm {
+     padding: 12px 40px;
+     font-size: 12px;
+     -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+     border-radius: 5px;
+}
+ .btn.btn-sm-pro {
+     -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+     border-radius: 5px;
+     font-size: 14px;
+     font-weight: 700;
+     margin-top: 5px;
+     padding: 12px 40px;
+     display: inline-block;
+}
+ .btn-border-light {
+     border: 2px solid var(--white) !important;
+}
+ .btn.btn-sm-pro.btn-border-light:hover, 
+ .btn.btn-sm-pro.btn-border-light:focus {
+     background-color: var(--white);
+     color: var(--color-heading);
+     border: 2px solid var(--white) !important;
+}
+ .btn-dark {
+     background-color: var(--color-heading);
+     color: var(--white);
+     border: 2px solid var(--color-heading) !important;
+}
+ .btn-dark.border {
+     background-color: transparent;
+     color: var(--color-heading);
+     border: 2px solid var(--color-heading) !important;
+}
+ .btn-dark.border:hover {
+     background-color: var(--color-heading);
+     color: var(--white) !important;
+     border: 2px solid var(--color-heading) !important;
+}
+ .btn.btn-light {
+     background: var(--white) none repeat scroll 0 0;
+     border: 2px solid var(--white) !important;
+     color: var(--color-heading);
+}
+ .btn.btn-light:hover, 
+ .btn.btn-light:focus {
+     background: transparent none repeat scroll 0 0;
+     border: 2px solid var(--white) !important;
+     color: var(--white);
+}
+ .btn.btn-light.effect:hover, 
+ .btn.btn-light.effect:focus {
+     background-color: var(--color-primary);
+     color: var(--white) !important;
+     border: 2px solid var(--color-primary) !important;
+}
+ .btn.btn-light.border {
+     background: transparent;
+     border: 2px solid var(--white) !important;
+     color: var(--white);
+}
+ .btn.btn-light.border:hover {
+     background: var(--white) none repeat scroll 0 0 !important;
+     border: 2px solid var(--white) !important;
+     color: var(--color-heading) !important;
+}
+ .btn-dark:hover, 
+ .btn-dark:focus {
+     color: var(--color-heading) !important;
+     background: transparent;
+}
+ .bg-dark {
+     background: var(--dark) !important;
+}
+ .btn-theme {
+     background-color: var(--color-primary);
+     color: var(--white);
+     border: 2px solid var(--color-primary) !important;
+}
+ .btn-theme.border {
+     background-color: transparent;
+     color: var(--color-primary);
+     border: 2px solid var(--color-primary) !important;
+}
+ .btn-theme.border:hover {
+     background-color: var(--color-primary);
+     color: var(--white) !important;
+     border: 2px solid var(--color-primary) !important;
+}
+ .btn-theme.effect:hover, 
+ .btn-theme.effect:focus {
+     background: var(--white) none repeat scroll 0 0;
+     border: 2px solid var(--white) !important;
+     color: var(--color-heading);
+}
+ .btn-theme:hover, 
+ .btn-theme:focus {
+     color: var(--color-primary) !important;
+     background: transparent;
+}
+ .btn.btn-sm-lm {
+     font-size: 12px;
+     padding: 12px 40px;
+}
+ .bg-fixed {
+     background-attachment: fixed;
+     background-position: center center;
+     background-size: cover;
+}
+ .bg-cover {
+     background-position: center center;
+     background-size: cover;
+}
+ .oh {
+     overflow: hidden;
+}
+
+.btn-dark {
+    background-color: var(--color-primary);
+    border: 2px solid var(--color-primary) !important;
+}
+
+
+/* ---- Responsive ---- */
+@media only screen and (max-width: 767px) {
+  h1 {
+           font-size: 40px;
+      }
+  h2 {
+           font-size: 30px;
+      }
+  h3 {
+           font-size: 24px;
+      }
+  h4 {
+           font-size: 18px;
+      }
+  h5 {
+           font-size: 16px;
+      }
+  h6 {
+           font-size: 14px;
+      }
+  .bg-fixed {
+          background-size: cover !important;
+          background-attachment: inherit !important;
+          background-position: center !important;
+      }
+  .default-padding {
+           padding-top: 30px;
+           padding-bottom: 30px;
+           padding-left: 20px;
+           padding-right:20px;
+      }
+  .default-padding.bottom-less {
+           padding-top: 50px;
+           padding-bottom: 20px;
+      }
+  .padding-xl {
+           padding-bottom: 50px;
+           padding-top: 50px;
+      }
+}
+

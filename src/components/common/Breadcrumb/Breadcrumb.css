@@ -1,0 +1,61 @@
+/* Page title / breadcrumb banner */
+
+/* ============================================================== 
+     # Bradcrumb 
+=================================================================== */
+.breadcrumb-area .breadcrumb {
+    background: transparent none repeat scroll 0 0;
+    display: inline-block;
+    margin: 0;
+    position: relative;
+    z-index: 1;
+    padding: 10px 15px;
+}
+ .breadcrumb-area .breadcrumb::after {
+     background: #1c1c1c none repeat scroll 0 0;
+     background-color: rgba(255, 255, 255, 0.85);
+     -webkit-border-radius: 0;
+     -moz-border-radius: 0;
+     border-radius: 0;
+     content: "";
+     height: 100%;
+     left: 0;
+     opacity: 0.6;
+     position: absolute;
+     top: 0;
+     width: 100%;
+     z-index: -1;
+}
+ .breadcrumb-area h1 {
+    display: block;
+    font-weight: 700;
+    text-transform: capitalize;
+    padding: 0;
+    margin-bottom: 5px;
+    line-height: 1.2;
+}
+.breadcrumb-area .breadcrumb a, 
+.breadcrumb-area .breadcrumb li {
+    font-weight: 500;
+    text-transform: uppercase;
+    display: inline-block;
+    position: relative;
+}
+.breadcrumb-area .breadcrumb li {
+    margin: 0 5px;
+
+}
+.breadcrumb-area .breadcrumb li:after {
+    padding: 0 5px;
+    color: var(--white);
+    content: "/\00a0";
+    right: -9px;
+    position: relative;
+}
+
+.breadcrumb-area .breadcrumb li:last-child:after {
+    display: none;
+}
+ .breadcrumb-area .breadcrumb li.active {
+     color: var(--color-primary);
+}

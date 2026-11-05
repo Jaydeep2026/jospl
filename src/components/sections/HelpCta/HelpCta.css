@@ -1,0 +1,191 @@
+/* "Need help?" call-to-action box */
+
+/* ============================================================== 
+     # Contact Info 
+=================================================================== */
+ .contact-info-area .contact-items .contact-info i {
+     color: var(--color-primary);
+     font-size: 40px;
+     margin-bottom: 30px;
+     display: inline-block;
+}
+ .contact-info-area .contact-items .item {
+     margin-bottom: 30px;
+}
+ .contact-info-area .contact-items .contact-info h4 {
+     font-weight: 700;
+}
+ .contact-info-area .contact-items .contact-info p {
+     margin: 0;
+}
+ .subscribe-box {
+     margin-bottom: 80px;
+     overflow: hidden;
+     padding: 50px;
+     text-align: center;
+     background-color: #860017;
+     
+}
+
+.subscribe-box .subscribe-info{
+    position: relative;
+    z-index: 1;
+}
+
+.subscribe-box .subscribe-info .icon{
+    position: absolute;
+    top:50%;
+    left:10px;
+    font-size: 20rem;
+    font-weight: 800;
+    color:rgba(255, 255, 255, 0.6);
+    z-index: 3;
+}
+
+@media (max-width:767px){
+
+    .subscribe-box .subscribe-info .icon{
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+        font-size: 10rem;
+        font-weight: 800;
+        color:rgba(255, 255, 255, 0.15);
+        z-index: 3;
+    }
+
+}
+
+.subscribe-box .subscribe-info h3 {
+    font-weight: 2.75rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    color:#f0f0f0;
+}
+ .subscribe-box .subscribe-info h4 {
+     font-weight: 600;
+     line-height: 1.9;
+     margin-bottom: 10px;
+     text-transform: none;
+     color:#f0f0f0;
+}
+ .subscribe-box .subscribe-info p {
+     margin: 0;
+}
+
+.subscribe-box .subscribe-info a {
+    color:#f0f0f0;
+}
+
+.subscribe-box .subscribe-info a:hover {
+    text-decoration: underline;
+}
+
+ .subscribe-form form {
+     position: relative;
+}
+.subscribe-form form input {
+    border: medium none;
+    box-shadow: inherit;
+    width: 100% !important;
+    min-height: 60px;
+    border-radius: 30px;
+    padding: 0 26px;
+}
+.subscribe-form form button {
+    background: var(--color-heading) none repeat scroll 0 0;
+    -webkit-border-radius: 0 5px 5px 0;
+    -moz-border-radius: 0 5px 5px 0;
+    border-radius: 0 5px 5px 0;
+    color: var(--white);
+    min-height: 50px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    min-height: 60px;
+    border-radius: 30px;
+    padding: 0 35px;
+}
+ .subscribe-form form button:hover, 
+ .subscribe-form form button:focus {
+     background: var(--color-primary) none repeat scroll 0 0;
+     color: var(--white);
+}
+ .subscribe-now .subscribe .subscribe-box {
+     margin-bottom: 0;
+}
+/* contact form alert */
+ .contact-form .loader {
+     display: inline-block;
+     margin-left: 10px;
+     margin-top: 5px;
+     position: absolute;
+     top: 50%;
+}
+ .alert {
+     border: 1px solid transparent;
+     -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+     border-radius: 5px;
+     color: red;
+     font-weight: 400;
+     margin-bottom: 0 !important;
+     padding: 0;
+     text-align: center;
+}
+ .alert-msg {
+     background: var(--white) none repeat scroll 0 0;
+     color: #685654;
+     display: none;
+     font-size: 12px;
+     font-weight: 700;
+     padding: 10px;
+     text-align: left;
+     margin-top: 20px;
+}
+ #message b {
+     color: red;
+}
+ .alert.alert-success {
+     background: transparent none repeat scroll 0 0;
+}
+ .alert.alert-success > h3 {
+     color: green;
+     margin-bottom: 5px;
+}
+ .alert.alert-success > p {
+     color: var(--color-heading);
+}
+ .alert-notification {
+     padding: 0;
+}
+
+.contact-form .form-group {
+    margin-bottom: 15px;
+}
+
+
+/* ---- Responsive ---- */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .subscribe-box.bg-gray {
+           text-align: center;
+      }
+  .subscribe-form {
+           margin-top: 30px;
+      }
+}
+
+@media only screen and (max-width: 767px) {
+  .subscribe-box.bg-gray {
+           text-align: center;
+      }
+  .subscribe-form {
+           margin-top: 30px;
+      }
+  .subscribe-box {
+           padding: 50px 15px;
+      }
+}
+

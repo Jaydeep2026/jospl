@@ -1,0 +1,97 @@
+/* Rich-text .content blocks: lists, ordered lists, tables */
+
+.content ul,
+.content ol,
+.process-item .info ul,
+.process-item .info ol {
+    padding-bottom: 2rem;
+    list-style: none;
+}
+
+.content ol,
+.process-item .info ol {
+    counter-reset: my-awesome-counter;
+}
+
+.content ul li,
+.content ol li,
+.process-item .info ul li,
+.process-item .info ol li {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #111;
+  text-align: left;
+  margin: 0 0 1rem 2rem;
+  padding: 0 5px 0 10px;
+  line-height: 1.5;
+}
+
+.content ol li,
+.process-item .info ol li {
+    counter-increment: my-awesome-counter;
+}
+
+.content ul li:before,
+.content ol li:before,
+.process-item .info ul li:before,
+.process-item .info ol li:before {
+  position: relative;
+  float: left;
+  color: #860017;
+  font-size: 1.5rem;
+  line-height: 1;
+  font-family: "ElegantIcons";
+  font-weight: 900;
+  margin: 0 0 0 -35px;
+}
+
+.content ul li:before,
+.process-item .info ul li:before {
+  content: "\24";
+}
+
+.content ol li:before,
+.process-item .info ol li:before {
+font-family: 'Open Sans', sans-serif;
+font-weight: 800;
+font-size: 1.25rem;
+content: counter(my-awesome-counter) ". ";
+}
+
+.content table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+.content table th, .content table td{
+    font-size: 0.9rem;
+    line-height: 1.2;
+    vertical-align: top;
+}
+
+.content table td{
+    vertical-align: center;
+}
+
+@media (max-width:767px){
+
+    ol, ul {
+        padding-left: 0rem;
+    }
+
+    .content ul li,
+    .process-item .info ul li {
+      margin: 0 0 1rem 2rem;
+    }  
+
+
+    .content ol li,
+    .process-item .info ol li {
+      margin: 0 0 1rem 1.125rem;
+    } 
+
+    .process-item .info {
+        padding-left: 10px;
+    }   
+
+}

@@ -1,0 +1,43 @@
+/* PDF download tiles */
+
+a.download-file{
+    position: relative;
+    padding:1rem 3rem 1rem 1rem;
+    width:100%;
+    line-height: 1.5;
+    display: block;
+    font-size: 0.8rem;
+    border:1px solid #cccccc;
+    text-transform: capitalize;
+    /* text-align: right; */
+    font-weight: 600;
+    color:#111111 !important;
+}
+
+a.download-file:before{
+    position: absolute;
+    top:50%;
+    right:0rem;
+    transform: translate(-50%,-50%);
+    content: "\f1c1";
+    font-family: "Font Awesome 5 Pro";
+    font-weight: 900;
+    font-size: 1.75rem;
+    color:#860017 !important;
+}
+
+a.download-file:hover{
+    border:1px solid #860017;
+    background-color: #860017;
+    color:#ffffff !important;
+}
+
+a.download-file:hover:before{
+    color:#ffffff !important;
+}
+
+@media (max-width:996px){
+    a.download-file{
+        font-size: 0.7rem;
+    }
+}

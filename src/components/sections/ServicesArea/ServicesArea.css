@@ -1,0 +1,256 @@
+/* Section heading / services area */
+
+/* ============================================================== 
+     # Services 
+=================================================================== */
+.site-heading h2 {
+  display: block;
+  font-weight: 800;
+  padding-bottom: 20px;
+  margin-bottom: 0;
+  position: relative;
+  line-height: 1.4;
+}
+
+.site-heading.less-info h2 {
+  margin-bottom: 0;
+}
+
+.site-heading h5 {
+  color: var(--color-paragraph);
+  font-weight: 800;
+  text-transform: uppercase;
+  display: inline-block;
+  position: relative;
+  overflow: inherit;
+}
+
+.bg-dark .site-heading h5 {
+  color: #cccccc;
+}
+
+.site-heading.clean h2 {
+  padding-bottom: 0;
+}
+
+.site-heading.clean h2 span {
+  color: #f1cf69;
+}
+
+.site-heading h2 span {
+  color: #f1cf69;
+}
+
+.site-heading.barber h2 span {
+  color: #bc9355;
+}
+
+.site-heading p {
+  margin: 0;
+  margin-top: 20px;
+  padding: 0 7%;
+}
+
+.site-heading h2::before {
+  background: #FF1949 none repeat scroll 0 0;
+  bottom: 0;
+  content: "";
+  height: 2px;
+  left: 50%;
+  margin-left: -25px;
+  position: absolute;
+  width: 40px;
+}
+
+.site-heading h2::after {
+  background: #FF1949 none repeat scroll 0 0;
+  bottom: 0;
+  content: "";
+  height: 2px;
+  left: 50%;
+  margin-left: 20px;
+  position: absolute;
+  width: 5px;
+}
+
+.site-heading.text-left h2::before {
+  left: 0;
+  margin-left: 0;
+}
+
+.site-heading.text-left h2::after {
+  left: 45px;
+  margin-left: 0;
+}
+
+.shadow .site-heading h2, 
+.shadow .site-heading p {
+  color: var(--white);
+}
+
+.bg-theme .site-heading h2::before,
+.shadow .site-heading h2::before {
+  background: var(--white) none repeat scroll 0 0;
+}
+
+.site-heading h2 span {
+  color: #f1cf69;
+}
+
+.site-heading {
+  margin-bottom: 60px;
+  margin-top: -5px;
+}
+ .site-heading {
+     margin-bottom: 60px;
+     overflow: hidden;
+}
+ .services-items .equal-height {
+     margin-bottom: 30px;
+}
+.services-items .item i {
+    font-size: 60px;
+    margin-bottom: 40px;
+    -webkit-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -ms-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    color: var(--color-heading);
+}
+
+.services-items .item i::after {
+    position: absolute;
+    left: -20px;
+    top: -50%;
+    content: "";
+    height: 80px;
+    width: 80px;
+    background: url(/assets/img/shape/1.png);
+    background-size: contain;
+    z-index: -1;
+    opacity: 0.05;
+    background-repeat: no-repeat;
+    transform: rotate(45deg);
+}
+
+.shape-standard .services-items .item i::after {
+    display: none;  
+}
+
+.shape-less .services-items .item i::after {
+    display: none;
+}
+
+.shape-standard .services-items .item .icon {
+    display: inline-block;  
+    position: relative; 
+    z-index: 1; 
+}
+
+.shape-standard .services-items .item .icon i {
+    color: var(--color-primary);
+}
+
+.shape-standard .services-items .item .icon::after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: "";
+    height: 60px;
+    width: 60px;
+    background: var(--color-primary);
+    z-index: -1;
+    opacity: 0.09;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    transform: inherit;
+}
+.shape-standard .services-items .item .icon::before {
+    position: absolute;
+    left: -15px;
+    top: -15px;
+    content: "";
+    height: 30px;
+    width: 30px;
+    background: var(--color-primary);
+    z-index: -1;
+    opacity: 0.09;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    transform: inherit;
+}
+ .services-area.icon-color .services-items .item i {
+     color: var(--color-primary);
+}
+ .services-items .item:hover i {
+     color: var(--color-primary);
+}
+ .services-area.icon-color .services-items .item:hover i {
+     color: var(--color-heading);
+}
+ .services-items .item p {
+     margin: 0;
+}
+ .services-items .item h4 {
+     font-weight: 700;
+     text-transform: capitalize;
+     margin-bottom: 10px;
+}
+ .services-area.active-hover .services-items .item i {
+     color: var(--color-heading)333;
+}
+ .services-items .equal-height .item {
+     background: var(--white) none repeat scroll 0 0;
+     -moz-box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+     -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+     -o-box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+     box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+     padding: 67px 40px 64px;
+}
+ .services-items.center-item .equal-height .item {
+     background: var(--white) none repeat scroll 0 0;
+     -moz-box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+     -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+     -o-box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+     box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+     padding: 67px 40px 64px;
+}
+
+
+/* ---- Responsive ---- */
+@media only screen and (max-width: 767px) {
+  .services-items {
+           text-align: center;
+      }
+  .services-area .site-heading {
+           margin-bottom: 30px;
+      }
+  .services-area .site-heading p {
+           margin-bottom: 0;
+      }
+  .services-area .equal-height::after {
+           display: none;
+      }
+  .services-area .equal-height::before {
+           left: 5%;
+           width: 90%;
+      }
+  .services-items .equal-height:last-child {
+           padding-bottom: 0;
+      }
+  .services-items .equal-height:last-child p {
+           margin: 0;
+      }
+}
+
+
+/* Shared section-heading spacing on small screens (kept here so it follows the base .site-heading rules) */
+@media only screen and (max-width: 767px) {
+  .site-heading {
+    margin-bottom: 30px;
+  }
+}

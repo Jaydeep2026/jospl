@@ -1,0 +1,146 @@
+/* Image + text mission blocks */
+
+/* ============================================================== 
+     # Our Mission 
+=================================================================== */
+ .our-mission .mission-info .nav.nav-tabs li button, 
+ .our-mission .mission-info .nav.nav-tabs li button:hover {
+     background: transparent none repeat scroll 0 0;
+     border-radius: inherit;
+     color: var(--color-heading);
+     font-weight: 700;
+     margin-right: 15px;
+     padding: 15px;
+     position: relative;
+     text-transform: uppercase;
+     border: none;
+     transition: all 0.35s ease-in-out;
+}
+ .our-mission .mission-info .nav.nav-tabs li button.active::after {
+     background: var(--color-heading) none repeat scroll 0 0;
+     bottom: -1px;
+     content: "";
+     height: 3px;
+     left: 0;
+     position: absolute;
+     width: 100%;
+     transition: all 0.35s ease-in-out;
+}
+ .our-mission .mission-info .nav.nav-tabs li button i {
+     margin-right: 5px;
+}
+ .our-mission .mission-info .nav.nav-tabs {
+     border-bottom: 1px solid #cdcdcd;
+     margin-bottom: 30px;
+     text-align: center;
+}
+ .our-mission .thumb {
+     padding-left: 50px;
+     position: relative;
+     z-index: 1;
+}
+
+ .our-mission .thumb img{
+
+    -webkit-box-shadow: 10px 10px 0px 0px rgba(134,0,23,1);
+    -moz-box-shadow: 10px 10px 0px 0px rgba(134,0,23,1);
+    box-shadow: 10px 10px 0px 0px rgba(134,0,23,1);
+
+ }
+
+/* .our-mission .thumb::after {
+    position: absolute;
+    left: -50px;
+    top: auto;
+    height: 70%;
+    content: "";
+    width: 300px;
+    border: 20px solid var(--color-primary);
+    z-index: -1;
+}
+
+.our-mission .thumb-alt::after {
+    position: absolute;
+    right: -50px;
+    top: auto;
+    height: 70%;
+    content: "";
+    width: 300px;
+    border: 20px solid var(--color-primary);
+    z-index: -1;
+} */
+
+ .our-mission .mission-info li {
+     display: inline-block;
+     float: none;
+}
+
+
+/* ---- Responsive ---- */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .our-mission .thumb {
+           margin-top: 30px;
+           padding-left: 15px;
+      }
+  .our-mission .thumb::after {
+          display: none;
+      }
+}
+
+@media only screen and (max-width: 767px) {
+  .our-mission .thumb {
+           margin-top: 30px;
+           padding-left: 15px;
+      }
+  .our-mission .thumb::after {
+          display: none;
+      }
+  .our-mission .mission-info li {
+           display: block;
+           float: none;
+      }
+  .our-mission .mission-info .nav.nav-tabs li button, 
+       .our-mission .mission-info .nav.nav-tabs li button:hover {
+           display: inline-block;
+           padding: 5px 10px;
+           margin: 0;
+      }
+  .our-mission .mission-info .nav.nav-tabs {
+           padding-bottom: 20px;
+      }
+  .our-mission .mission-info .nav.nav-tabs li button.active, 
+       .our-mission .mission-info .nav.nav-tabs li button:hover {
+           color: #e22a31;
+      }
+  .our-mission .mission-info .nav.nav-tabs li button.active::after {
+           display: none;
+      }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .our-mission .mission-info .nav.nav-tabs li.active a::after {
+           display: block;
+      }
+  .our-mission .mission-info li {
+           display: inline-block;
+           float: none;
+      }
+  .our-mission .mission-info .nav.nav-tabs li button, 
+       .our-mission .mission-info .nav.nav-tabs li button:hover {
+           display: inline-block;
+           font-size: 12px;
+           padding: 10px;
+           margin: 0;
+      }
+  .our-mission .mission-info .nav.nav-tabs {
+           padding-bottom: 0;
+      }
+  .our-mission .mission-info .nav.nav-tabs li.active a, 
+       .our-mission .mission-info .nav.nav-tabs li button:hover {
+           color: #232323;
+      }
+  .our-mission .mission-info .nav.nav-tabs li.active a::after {
+           display: block;
+      }
+}
+

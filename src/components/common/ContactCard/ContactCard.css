@@ -1,0 +1,24 @@
+/* Contact info cards */
+
+.contact-card{
+    padding:1rem;
+    border:1px solid #ccc;
+    background-color: #f0f0f0;
+    text-align: center;
+    min-height:230px;
+}
+
+.contact-card h4,
+.contact-card p{
+    margin-bottom: 10px;
+}
+
+.contact-card h4{
+    text-transform: capitalize;
+    color: #860017;
+    font-weight: 500;
+}
+.contact-card :last-child{
+    padding-bottom:0;
+    margin-bottom: 0;
+}
