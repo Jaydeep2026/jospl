@@ -1,15 +1,23 @@
 import YouTubeBackground from './YouTubeBackground';
 import './HeroBanner.css';
 
-export default function HeroBanner({ title, videoId }) {
+export default function HeroBanner({ videoId }) {
   return (
-    <div id="home" className="banner-area">
-      <div id="sofolbanner" className="carousel slide animate_text text-center">
-        <div className="ytb-container">
-          <YouTubeBackground id="ytbg" className="home-ytbg" videoId={videoId} />
-          <h1>{title}</h1>
-        </div>
+    <section id="home" className="hero">
+      <div className="hero-content container-fluid px-md-5">
+        <p className="hero-eyebrow">
+          Invest <span>·</span> Trade <span>·</span> Grow
+        </p>
+        <h1 className="hero-title">
+          Invest and Trade with us in the
+          <strong>NSE Equity Market</strong>
+        </h1>
+        <span className="hero-line" aria-hidden="true"></span>
       </div>
-    </div>
+
+      <div className="hero-media">
+        <YouTubeBackground id="ytbg" className="home-ytbg" videoId={videoId} />
+      </div>
+    </section>
   );
 }

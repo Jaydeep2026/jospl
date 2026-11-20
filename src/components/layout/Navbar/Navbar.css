@@ -3301,3 +3301,116 @@ img.logo-mob{
     }
 
 }
+/* =====================================================
+   JAS-ONE THEME OVERRIDES (keep at the bottom)
+   ===================================================== */
+
+.attr-border .attr-nav::after {
+  display: none;
+}
+.navbar-style-one .collapse-header img {
+  display: none;
+}
+
+nav.navbar.validnavs {
+  background: var(--bg-gray);
+  padding: 0;
+  box-shadow: none;
+}
+
+nav.navbar.validnavs .navbar-brand > img {
+  max-height: 46px;
+}
+
+/* ---------- Desktop ---------- */
+@media (min-width: 1024px) {
+  nav.navbar ul.nav > li > a {
+    padding: 26px 14px;
+    font-family: var(--font-default);
+    font-size: 0.875rem;
+    font-weight: 600;
+    text-transform: none;
+    color: var(--color-heading);
+    transition: color 0.2s ease;
+  }
+
+  nav.navbar ul.nav > li > a:hover,
+  nav.navbar ul.nav > li.dropdown.on > a {
+    color: var(--color-primary);
+  }
+
+  /* Active item: bottom bar */
+  nav.navbar ul.nav > li > a.active {
+    color: var(--color-primary);
+  }
+  nav.navbar ul.nav > li > a.active::before {
+    content: '';
+    position: absolute;
+    left: 14px;
+    right: 14px;
+    bottom: 0;
+    height: 3px;
+    background: var(--color-primary);
+    border-radius: 2px;
+  }
+
+ 
+  /* Dropdown arrow (pure CSS chevron, no font needed) */
+  nav.navbar.validnavs ul.nav > li.dropdown > a.dropdown-toggle::after {
+    content: '';
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    margin-left: 8px;
+    border: 0 solid currentColor;
+    border-right-width: 1.5px;
+    border-bottom-width: 1.5px;
+    transform: rotate(45deg);
+    position: relative;
+    top: -2px;
+    vertical-align: middle;
+    font-family: inherit;
+    transition: transform 0.25s ease, top 0.25s ease;
+  }
+
+  nav.navbar.validnavs ul.nav > li.dropdown.on > a.dropdown-toggle::after {
+    transform: rotate(-135deg);
+    top: 1px;
+  }
+
+  /* Dropdown panel */
+  nav.navbar.validnavs li.dropdown ul.dropdown-menu {
+    width: 230px;
+    padding: 8px 0;
+    border: 1px solid #ece6e7;
+    border-radius: 8px;
+    background: var(--white);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  }
+
+  nav.navbar.validnavs ul li.dropdown ul.dropdown-menu li a {
+    padding: 10px 20px !important;
+    font-size: 0.8rem;
+    font-weight: 500 !important;
+    text-transform: none;
+    color: var(--color-heading);
+  }
+
+  nav.navbar.validnavs ul li.dropdown ul.dropdown-menu li a:hover,
+  nav.navbar.validnavs ul li.dropdown ul.dropdown-menu li a.active {
+    background: var(--color-primary-soft) !important;
+    color: var(--color-primary);
+  }
+}
+
+/* ---------- Mobile ---------- */
+@media (max-width: 1023px) {
+  nav.navbar.validnavs {
+    background: var(--bg-gray) !important;
+    border-bottom: 1px solid #ece6e7;
+  }
+  nav.navbar.validnavs .navbar-nav > li > a.active,
+  nav.navbar.validnavs .navbar-nav > li > a:hover {
+    color: var(--color-primary);
+  }
+}

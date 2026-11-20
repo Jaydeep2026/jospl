@@ -69,3 +69,105 @@
       }
 }
 
+/* =====================================================
+   HOME ABOUT (modern layout) - scoped to .about-modern
+   ===================================================== */
+.about-area.about-modern {
+  background: var(--white);
+  padding: 90px 0;
+}
+
+/* image: no card, no shadow */
+.about-area.about-modern .thumb {
+  padding: 0 40px 0 15px;
+}
+.about-area.about-modern .thumb img {
+  width: 100%;
+  padding: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+/* eyebrow */
+.about-area.about-modern .about-eyebrow {
+  margin: 0 0 14px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  line-height: 1.4;
+  color: var(--color-primary);
+}
+
+/* headline */
+.about-area.about-modern .content h2 {
+  margin: 0 0 20px;
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--color-heading);
+}
+
+/* maroon lead */
+.about-area.about-modern .content h3 {
+  margin: 0 0 20px;
+  font-size: 1.05rem;
+  font-weight: 700;
+  line-height: 1.5;
+  color: var(--color-primary);
+}
+
+/* paragraph */
+.about-area.about-modern .content p:not(.about-eyebrow) {
+  margin: 0 0 30px;
+  font-size: 0.98rem;
+  line-height: 1.8;
+  color: var(--color-paragraph);
+}
+
+/* button */
+.about-area.about-modern .content a.about-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  margin: 0;
+  padding: 14px 28px;
+  border-radius: 6px;
+  background: var(--color-primary);
+  color: var(--white);
+  font-size: 0.9rem;
+  font-weight: 600;
+  line-height: 1;
+  transition: background 0.25s ease, transform 0.25s ease;
+}
+.about-area.about-modern .content a.about-btn:hover {
+  background: var(--color-primary-dark);
+  color: var(--white);
+}
+.about-area.about-modern .content a.about-btn i {
+  font-size: 0.8rem;
+  transition: transform 0.25s ease;
+}
+.about-area.about-modern .content a.about-btn:hover i {
+  transform: translateX(4px);
+}
+
+/* tablet / mobile */
+@media (max-width: 991px) {
+  .about-area.about-modern {
+    padding: 60px 0;
+  }
+  .about-area.about-modern .thumb {
+    padding: 0 15px;
+    margin: 0 0 30px;
+  }
+  .about-area.about-modern .content h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 575px) {
+  .about-area.about-modern .content h2 {
+    font-size: 1.7rem;
+  }
+}

@@ -1,316 +1,115 @@
-/* Home hero banner with video background */
-
-/* ============================================================== 
-     # Banner 
-=================================================================== */
- body, .banner-area, 
- .banner-area div {
-     height: 100%;
-}
-
-.banner-area {
-    overflow: hidden;
-}
-
- .banner-area .box-cell {
-     display: table-cell;
-     vertical-align: middle;
-     width: 100%;
-}
- .banner-area .box-table {
-     display: table;
-     width: 100%;
-}
- .banner-area .box-cell, 
- .banner-area .box-cell div {
-     height: auto;
-}
- .banner-area {
-     position: relative;
-}
-.banner-area .carousel-item h1 {
-    line-height: 1;
-    font-size: 120px;
-    font-weight: 700;
-    text-transform: capitalize;
-}
-
- .banner-area .carousel-item p {
-     font-size: 16px;
-     line-height: 30px;
-}
- .banner-area .carousel-control {
-     font-size: 30px;
-     height: 50px;
-     line-height: 50px;
-     padding: 0;
-     position: absolute;
-     top: 50%;
-     width: 50px;
-     margin-top: -25px;
-     background: transparent;
-     opacity: 1;
-     z-index: 1;
-     display: inline-block;
-     text-align: center;
-}
-
- .banner-area .carousel-control.light {
-     color: var(--white);
-}
- .banner-area .carousel-item a {
-     margin-right: 10px;
-     margin-top: 15px;
-}
- .banner-area .carousel-control.left {
-     left: -50px;
-}
- .banner-area:hover .carousel-control.left,
- .banner-area .carousel-control.focus.left {
-     left: 15px;
-}
- .banner-area .carousel-control.right {
-     right: -50px;
-}
- .banner-area:hover .carousel-control.right,
-  .banner-area .carousel-control.focus.right {
-     right: 15px;
-}
-/* Animation delays */
- .banner-area .carousel-item h1:first-child, 
- .banner-area .carousel-item h2:first-child, 
- .banner-area .carousel-item h3:first-child, 
- .banner-area .carousel-item h4:first-child, 
- .banner-area .carousel-item h5:first-child, 
- .banner-area .carousel-item h6:first-child {
-     animation-delay: .5s;
-}
- .banner-area .carousel-item h1:nth-child(2), 
- .banner-area .carousel-item h2:nth-child(2), 
- .banner-area .carousel-item h3:nth-child(2), 
- .banner-area .carousel-item h4:nth-child(2), 
- .banner-area .carousel-item h5:nth-child(2), 
- .banner-area .carousel-item h6:nth-child(2) {
-     animation-delay: .7s;
-}
- .carousel-caption h1:nth-child(3), 
- .carousel-caption h2:nth-child(3), 
- .carousel-caption h3:nth-child(3), 
- .carousel-caption h4:nth-child(3), 
- .carousel-caption h5:nth-child(3), 
- .carousel-caption h6:nth-child(3) {
-     animation-delay: .9s;
-}
- .banner-area .carousel-item p {
-     animation-delay: .5s;
-}
- .banner-area .carousel-item a, 
- .banner-area .carousel-item button {
-     animation-delay: .7s;
-}
-/* Carousel Fade Effect */
- .carousel-fade .carousel-inner .carousel-item {
-     -webkit-transition-property: opacity;
-     transition-property: opacity;
-}
- .carousel-fade .carousel-inner .carousel-item, 
- .carousel-fade .carousel-inner .active.left, 
- .carousel-fade .carousel-inner .active.right {
-     opacity: 0;
-}
- .carousel-fade .carousel-inner .active, 
- .carousel-fade .carousel-inner .next.left, 
- .carousel-fade .carousel-inner .prev.right {
-     opacity: 1;
-}
- .carousel-fade .carousel-inner .next, 
- .carousel-fade .carousel-inner .prev, 
- .carousel-fade .carousel-inner .active.left, 
- .carousel-fade .carousel-inner .active.right {
-     left: 0;
-     -webkit-transform: translate3d(0, 0, 0);
-     -moz-transform: translate3d(0, 0, 0);
-     -ms-transform: translate3d(0, 0, 0);
-     -o-transform: translate3d(0, 0, 0);
-}
- .carousel-fade .carousel-control {
-     z-index: 2;
-}
-/* Slider Zoom Effect */
- @-webkit-keyframes zoom {
-     from {
-         -webkit-transform: scale(1, 1);
-    }
-     to {
-         -webkit-transform: scale(1.5, 1.5);
-    }
-}
- @-moz-keyframes zoom {
-     from {
-         -moz-transform: scale(1, 1);
-    }
-     to {
-         -moz-transform: scale(1.5, 1.5);
-    }
-}
- @-o-keyframes zoom {
-     from {
-         -o-transform: scale(1, 1);
-    }
-     to {
-         -o-transform: scale(1.5, 1.5);
-    }
-}
- @keyframes zoom {
-     from {
-         transform: scale(1, 1);
-    }
-     to {
-         transform: scale(1.5, 1.5);
-    }
-}
- .carousel-inner .carousel-item > .thumbnail-fixed {
-     -webkit-animation: zoom 20s;
-     animation: zoom 20s;
-}
- .banner-area .carousel-zoom .thumbnail-fixed {
-     height: 100%;
-     position: absolute;
-     width: 100%;
-}
-
- .banner-area a {
-    margin-right: 10px;
-    margin-top: 10px;
- }
-
-
- .banner-area.text-center a,
- .banner-area .text-center a {
-    margin-right: 5px;
-    margin-left: 5px;
- }
-
- .banner-area p {
-    padding-right: 25%;
- }
-
-  .banner-area.text-center p ,
- .banner-area .text-center p  {
-    padding-right: 15%;
-    padding-left: 15%;
- }
-
- .banner-area.text-large h1 {
-    font-size: 100px;
-    line-height: 1;
-    text-transform: capitalize;
-}
-
- .banner-area.text-medium h1 {
-    font-size: 80px;
-    line-height: 1;
-    text-transform: capitalize;
-}
-
-.banner-area.top-pad-90 .carousel-item {
-    padding-top: 90px;
-}
-
-.banner-area.text-dark p {
-    color: var(--color-heading);
-}
-
-.banner-thumb {
-  display: none;
-}
-
-.banner-area {
+/* Home hero: text left, slanted video right */
+.hero {
   position: relative;
+  display: flex;
+  align-items: center;
+  min-height: clamp(440px, 62vh, 600px);
   overflow: hidden;
+  background: var(--bg-gray);
 }
 
-.ytb-container{
-
-    position: relative;
-    height: 100vh;
-  
-  }
-
-  .ytb-container{
-
-    position: relative;
-    height: 100vh;
-    z-index: 0;
-  }
-
-
-  .ytb-container h1{
-  position: absolute;
-  top:50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  max-width: 700px;
-  font-weight: 700;
-  font-size: 3rem;
-  text-align: center;
-  color:#fff;
+.hero-content {
+  position: relative;
   z-index: 2;
-  text-shadow: 0px 0px 62px rgba(0,0,0,0.90);
-
+  padding-top: 70px;
+  padding-bottom: 70px;
 }
 
-
-@media (max-width:767px){
-    .ytb-container{
-
-        position: relative;
-        height: 450px;
-        z-index: 0;
-      }  
-
-      .ytb-container h1{
-        max-width: 100%;
-        font-size: 2rem;
-      }
+.hero-eyebrow {
+  margin: 0 0 18px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  line-height: 1.4;
+  color: var(--color-heading);
 }
 
-/* .ytb-container h1:before{
-    content:"";
-    position: absolute;
-    width:100%;
-    height:100vh;
-    top:0;
-    left:0;
-    display: block;
-    background-color: rgba(0, 0, 0, 0.6);
-    z-index: 1;
-} */
-
-
-/* ---- Responsive ---- */
-@media only screen and (max-width: 767px) {
-  .banner-area .item h1 {
-           font-size: 30px;
-      }
-  .banner-area .carousel-item h1 {
-          font-size: 36px;
-          line-height: 1.2;
-      }
-  .banner-area.top-pad-90 .carousel-item {
-          padding-top: 60px;
-      }
-  .banner-area.text-large h1 {
-          font-size: 36px;
-          line-height: 1.2; 
-       }
-  .banner-area.text-medium h1 {
-          font-size: 36px;
-          line-height: 1.2; 
-       }
-  .banner-area p {
-          padding: 0 !important;
-       }
+.hero-eyebrow span {
+  margin: 0 6px;
+  color: var(--color-primary);
 }
 
+.hero-title {
+  margin: 0;
+  max-width: 760px;
+  font-size: 2.6rem;
+  font-weight: 400;
+  line-height: 1.2;
+  color: var(--color-heading);
+}
+
+.hero-title strong {
+  display: block;
+  margin-top: 8px;
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 1.1;
+  color: var(--color-primary);
+}
+
+.hero-line {
+  display: block;
+  width: 90px;
+  height: 4px;
+  margin-top: 34px;
+  background: var(--color-primary);
+}
+
+.hero-media {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 50%;
+  z-index: 1;
+  overflow: hidden;
+  background: #0b1a1a;
+  clip-path: polygon(26% 0, 100% 0, 100% 100%, 0 100%);
+}
+
+/* Tablet */
+@media (max-width: 991px) {
+  .hero-title {
+    font-size: 2rem;
+    max-width: 520px;
+  }
+  .hero-title strong {
+    font-size: 3rem;
+  }
+  .hero-media {
+    width: 45%;
+  }
+}
+
+/* Mobile: video goes below the text */
+@media (max-width: 767px) {
+  .hero {
+    flex-direction: column;
+    align-items: stretch;
+    min-height: 0;
+  }
+
+  /* video first, text below */
+  .hero-media {
+    order: 1;
+    position: relative;
+    width: 100%;
+    height: 260px;
+    clip-path: none;
+  }
+
+  .hero-content {
+    order: 2;
+    padding-top: 30px;
+    padding-bottom: 36px;
+  }
+
+    .hero-title {
+    font-size: 1.6rem;
+    max-width: 100%;
+  }
+  .hero-title strong {
+    font-size: 2.3rem;
+  }
+}
