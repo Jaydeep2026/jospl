@@ -21,11 +21,40 @@ export default function Home() {
       />
 
       <WorkProcess
-        title="Open Account in 3 Steps"
-        image="/assets/img/account-opening.jpg"
-        imageAlt="Account Opening"
-        steps={HOME_STEPS}
-      />
+  modern
+  title="Open Account in 3 Steps"
+  steps={[
+    {
+      icon: 'ti-write',
+      title: 'Fill In The Application Form',
+      content: (
+        <p>
+          Send us a request at info@jospl.com or call us on 02240327993 and we will send it to you.
+        </p>
+      ),
+    },
+    {
+      icon: 'ti-clipboard',
+      title: 'Submit Supporting Documents For KYC',
+      content: (
+        <p>
+          A passport-size photo, a self-attested copy of your PAN, address proof (Driving Licence,
+          Voter ID, Passport, or Aadhaar Card), and bank account proof.
+        </p>
+      ),
+    },
+    {
+      icon: 'ti-id-badge',
+      title: 'In-Person Verification (IPV)',
+      content: (
+        <p>
+          As part of the mandatory In-Person Verification (IPV) requirement for all brokers, Webcam
+          or a physical verification is required.
+        </p>
+      ),
+    },
+  ]}
+/>
 
       <HelpCta />
     </>

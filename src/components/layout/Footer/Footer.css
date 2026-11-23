@@ -224,4 +224,139 @@ footer .info .meta-title a {
           text-align: center !important;
       }
 }
+/* =====================================================
+   FOOTER (modern layout) - scoped to footer.footer-modern
+   ===================================================== */
+footer.footer-modern {
+  background: var(--bg-gray);
+  padding: 50px 0 0;
+  border-top: 1px solid #ece6e7;
+}
 
+/* ---------- 3 columns with vertical dividers ---------- */
+footer.footer-modern .footer-top {
+  padding-bottom: 30px;
+}
+
+footer.footer-modern .footer-top .item {
+  padding: 0 30px;
+}
+footer.footer-modern .footer-top .item:first-child {
+  padding-left: 15px;
+}
+
+@media (min-width: 768px) {
+  footer.footer-modern .footer-top .item + .item {
+    border-left: 1px solid #e3dcdd;
+  }
+}
+
+/* headings */
+footer.footer-modern .f-item h4 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 0 16px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--color-heading);
+}
+footer.footer-modern .f-item h4 i {
+  font-size: 1.15rem;
+  line-height: 1;
+  color: var(--color-primary);
+}
+
+/* text */
+footer.footer-modern .f-item p {
+  margin: 0 0 6px;
+  font-size: 0.78rem;
+  line-height: 1.7;
+  color: var(--color-heading);
+}
+
+footer.footer-modern a {
+  color: var(--color-heading);
+  word-break: normal;
+  overflow-wrap: anywhere;
+}
+footer.footer-modern a:hover {
+  color: var(--color-primary);
+}
+
+/* address column */
+footer.footer-modern .f-item .address {
+  margin-top: 0;
+}
+footer.footer-modern .f-item .address li {
+  display: block;
+  margin-bottom: 18px;
+}
+footer.footer-modern .f-item .address li span {
+  display: block;
+  font-size: 0.78rem;
+  line-height: 1.7;
+  color: var(--color-heading);
+}
+
+/* important links */
+footer.footer-modern .footer-links {
+  padding-left: 16px;
+}
+footer.footer-modern .footer-links li {
+  margin-bottom: 4px !important;
+}
+footer.footer-modern .footer-links li:before {
+  margin: 0 0 0 -16px;
+  font-size: 0.85rem;
+  line-height: 1.9;
+  font-weight: normal;
+  color: var(--color-primary);
+}
+footer.footer-modern .footer-links li a {
+  font-size: 0.78rem;
+}
+
+/* ---------- disclaimer ---------- */
+footer.footer-modern .footer-disclaimer {
+  padding: 22px 0 8px;
+  border-top: 1px solid #e3dcdd;
+}
+footer.footer-modern .footer-disclaimer p {
+  margin: 0 0 6px;
+  font-size: 0.72rem;
+  line-height: 1.6;
+  color: var(--color-paragraph);
+}
+footer.footer-modern .footer-disclaimer b {
+  color: var(--color-heading);
+}
+
+/* ---------- copyright bar ---------- */
+footer.footer-modern .footer-bottom {
+  margin-top: 16px;
+  padding: 18px 0;
+  border-top: 1px solid #e3dcdd;
+}
+footer.footer-modern .footer-bottom p {
+  font-size: 0.72rem;
+  color: var(--color-paragraph);
+}
+
+/* ---------- mobile ---------- */
+@media (max-width: 767px) {
+  footer.footer-modern {
+    padding-top: 36px;
+  }
+  footer.footer-modern .footer-top .item,
+  footer.footer-modern .footer-top .item:first-child {
+    padding: 0 15px;
+    margin-bottom: 28px;
+  }
+  footer.footer-modern .footer-top .item:last-child {
+    margin-bottom: 0;
+  }
+}
