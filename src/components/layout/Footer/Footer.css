@@ -257,7 +257,7 @@ footer.footer-modern .f-item h4 {
   align-items: center;
   gap: 10px;
   margin: 0 0 16px;
-  font-size: 0.85rem;
+  font-size: 1rem;
   font-weight: 700;
   line-height: 1.4;
   letter-spacing: 0.02em;
@@ -273,7 +273,7 @@ footer.footer-modern .f-item h4 i {
 /* text */
 footer.footer-modern .f-item p {
   margin: 0 0 6px;
-  font-size: 0.78rem;
+  font-size: 0.8rem;
   line-height: 1.7;
   color: var(--color-heading);
 }
@@ -297,7 +297,7 @@ footer.footer-modern .f-item .address li {
 }
 footer.footer-modern .f-item .address li span {
   display: block;
-  font-size: 0.78rem;
+  font-size: 0.8rem;
   line-height: 1.7;
   color: var(--color-heading);
 }
@@ -311,13 +311,13 @@ footer.footer-modern .footer-links li {
 }
 footer.footer-modern .footer-links li:before {
   margin: 0 0 0 -16px;
-  font-size: 0.85rem;
+  font-size: 1rem;
   line-height: 1.9;
   font-weight: normal;
   color: var(--color-primary);
 }
 footer.footer-modern .footer-links li a {
-  font-size: 0.78rem;
+  font-size: 0.8rem;
 }
 
 /* ---------- disclaimer ---------- */
@@ -327,7 +327,7 @@ footer.footer-modern .footer-disclaimer {
 }
 footer.footer-modern .footer-disclaimer p {
   margin: 0 0 6px;
-  font-size: 0.72rem;
+  font-size: 0.8rem;
   line-height: 1.6;
   color: var(--color-paragraph);
 }
@@ -342,7 +342,7 @@ footer.footer-modern .footer-bottom {
   border-top: 1px solid #e3dcdd;
 }
 footer.footer-modern .footer-bottom p {
-  font-size: 0.72rem;
+  font-size: 0.8rem;
   color: var(--color-paragraph);
 }
 
